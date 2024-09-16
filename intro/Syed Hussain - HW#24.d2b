@@ -1,0 +1,99 @@
+;Syed Hussain
+;Sec: 04 
+;PD: 04
+;HW#24- Base Conversion
+;2022-11-02
+;Time spent: 0.7 Hours
+;colab: Kaia Berger
+
+Lets generalize the idea by a table
+
+BASE - 10 with (2793) → BASE - 2 with (? ?)
+**In order to find the base value of base 2. We have to continuously divide 2798 with 2 to get the quotient and the remainder. And we can divide the base - 10 value until the remainder hits 0.
+
+
+Quotient
+Remainder
+2793 divided by 2		1396		1
+
+1396 divided by 2		698		0
+
+698 divided by 2		349		0
+
+349 divided by 2		174		1
+
+174 divided by 2		87		0
+
+87 divided by 2		43		1
+
+43 divided by 2		21		1
+
+21 divided by 2		10		1
+
+10 divided by 2		5		0
+
+5 divided by 2		2		1
+
+2 divided by 2		1		0
+
+
+**So if we sum up line-up the remainder digits(bit) then we can get the binary (base-2) of Base - 10 with (2793)
+
+Result: 10010111010
+
+*According to the observation we can also use (101011101001)₂ to get exactly (2793)₁₀
+But This time we have to do something different.
+We have to make the digits as numbers. (e.g if 10 digits then make them 0-9 serially).
+
+
+exponent
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+binary
+
+1
+0
+1
+0
+1
+1
+1
+0
+1
+0
+0
+1
+
+Conversion:
+
+
+1*2^11+0*2^10+1*2^9+0*2^8+1*2^7+1*2^6+1*2^5+0*2^4+1*2^3+0*2^2+0*2^1+1*2^0
+
+**As it was in binary. So in order to convert we have to rise 2 by the power of the exponent and multiply it by the binary digit and the add to. And keep repeating the formula until the exponent hits 0.
+
+
+
+Conversion:
+
+
+1*2^11+0*2^10+1*2^9+0*2^8+1*2^7+1*2^6+1*2^5+0*2^4+1*2^3+0*2^2+0*2^1+1*2^0
+
+**As it was in binary. So in order to convert we have to rise 2 by the power of the exponent and multiply it by the binary digit and the add to. And keep repeating the formula until the exponent hits 0.
+
+
+
+* Please refer to this document of the exponent and binary part seems confusing.   https://docs.google.com/document/d/1PN8rHWagxg6yTUv2Dw7qDsaI4vjAwzGJaDUmfDO9_hA/edit?usp=sharing
+

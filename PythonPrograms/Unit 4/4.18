@@ -1,0 +1,11 @@
+import random
+ls = ['red', 'green', 'blue']
+print(random.choice(ls))
+
+makdov = {'Quickly, he' : ['ran'],
+          'ran until' : ['he'],
+          'he ran' : ['and', 'until'],
+          'ran and' : ['he'],
+          'and he' : ['ran'],
+          'until he' : ['couldnt']}
+    make_sentence('quickly he', makdov, 3)

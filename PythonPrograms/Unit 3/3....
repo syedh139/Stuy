@@ -1,0 +1,9 @@
+session1 = 125
+session2 = 35
+session3 = 55
+
+total = session1 + session2 + session3
+total_hours = total // 60
+rem_minutes = total % 60
+
+print (total_hours, + 'and' rem_minutes)

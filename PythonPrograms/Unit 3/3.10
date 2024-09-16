@@ -1,0 +1,7 @@
+
+
+
+#items = 'H'
+nobles = 'H' 'K' 'O'
+for items in nobels;
+   print (items)

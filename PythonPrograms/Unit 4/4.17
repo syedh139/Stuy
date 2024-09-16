@@ -1,0 +1,10 @@
+import random
+
+def random_picker(list_of_words):
+   return list_of_words[(random.randrange(0,4))]
+
+words = ["red","blue","green","fuchsia"]
+
+for i in range(4):
+    #x = random.random()
+  print(random_picker(words),end=" ")#should print all 4 words.
